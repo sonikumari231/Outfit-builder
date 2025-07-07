@@ -1,44 +1,100 @@
-<<<<<<< HEAD
-# Outfit-builder
-=======
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+
+
+# 👗 Outfit Builder – Next.js (Drag & Drop Clothing Editor)
+
+This is a web-based WYSIWYG (What You See Is What You Get) outfit builder built using **Next.js**. It allows users to drag and drop clothing icons onto a virtual canvas, visualize outfit combinations, and add selected outfits to a shopping cart.
+
+---
+
+## 🚀 Features
+
+- 🡥 Drag-and-drop clothing items (e.g., shirts, jackets, jeans, shoes)
+- 🎯 Visual canvas to layer and position clothing
+- 🛒 "Add to Cart" functionality
+- ⚡ Built with Next.js for performance and scalability
+- 🧠 Clean, intuitive user interface using custom CSS (no Tailwind)
+
+---
+
+## 🛆 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- HTML5 Drag-and-Drop API
+- react-dnd + react-dnd-html5-backend (for enhanced drag-and-drop experience)
+
+---
+
+## 🛠️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone (https://github.com/sonikumari231/Outfit-Builder.git)
+cd outfit-builder
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Install Drag and Drop Dependencies (Optional)
+
+If you want to use advanced drag-and-drop features:
+```bash
+npm install react-dnd react-dnd-html5-backend
+```
+
+### 4. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+App will be available at [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+---
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## 📁 Project Structure
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+```
+/public/icons         # Clothing item images (e.g., tshirt.png, shoes.png)
+pages/index.js        # Main drag-and-drop editor
+styles/               # Custom CSS styling (optional)
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 How to Use
 
-To learn more about Next.js, take a look at the following resources:
+1. Drag an item from the left panel.
+2. Drop it anywhere on the canvas to build your outfit.
+3. Click **"Add to Cart"** to simulate selection (for now, a popup appears).
+4. Combine as many clothing items as you'd like.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📌 Assets
 
-## Deploy on Vercel
+Clothing icons must be placed under `public/icons/`. Example:
+```
+public/icons/tshirt.png
+public/icons/jeans.png
+public/icons/jacket.png
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
->>>>>>> 17f7738 (Initial commit from Create Next App)
+## ✨ Future Enhancements
+
+- User authentication & saved outfit history
+- Real shopping cart + checkout flow
+- Mobile responsiveness
+- Undo/redo functionality
+
+---
+
